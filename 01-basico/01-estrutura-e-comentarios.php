@@ -15,5 +15,4 @@
     echo 'b'.'<br>'.PHP_EOL;
 
     print('abc');
-
-    //var_dump
+    echo('Após 5 segundos');
