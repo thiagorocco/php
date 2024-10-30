@@ -32,7 +32,7 @@ print_r($carro);
 //boolean
 $exibir_nome = TRUE; // true, True ou TRUE é a mesma coisa
 if ($exibir_nome){
-    echo '<br>José da Silva';
+    echo '<br>José da Silva Sauro';
 }
 /*
     Também são considerados valores falsos em comparações booleanas:
