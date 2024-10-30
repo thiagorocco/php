@@ -10,7 +10,7 @@ $codigo_cliente = 144;
 $string = 'Thiago';
 $outra_string = 'Rocco';
 $vetor = array('Palio','Gol','Fiesta','Corsa');
-var_dump($vetor);
+//var_dump($vetor);
 
 //objetos
 $obj = new stdClass; //Cria um objeto
@@ -55,3 +55,34 @@ if ($exibir_nome){
 
 //Tipo misto -  indica que a função aceita diversos tipos de dados como parâmetro.
 //Um exemplo é a função gettype(), que obtém o tipo da variável
+
+
+//Tipo callback
+//Algumas funções aceitam como parâmetro outra função. Ex: call_user_func()
+function increment(&$var){
+    $var++;
+}
+$a = 10;
+call_user_func('increment', $a);
+echo $a."<br>";
+
+
+//Tipo null - Variável que não tem valor
+
+//Declarações de tipo - o PHP não é tipado naturalmente, faz a conversão dinâmica do tipo da variável.
+//É possível definir o tipo que é retornado nos parâmetros de uma função
+$age = 34;
+$name = 'Thiago';
+var_dump($age, $name);
+
+//Essa conversão não é perfeita, pois no caso de uma string 10.5x como um dos parâmetros dará um erro
+function calcula_imc(float $peso, float $altura){
+    var_dump($peso, $altura);
+    return $peso/($altura*$altura);
+}
+var_dump(calcula_imc('75.1',2));
+
+//Tipagem estrita
+//quando habilitada, exige que o tipo da variável passada como parâmetro em tempo de execução
+//seja exatamente o mesmo tipo declarado.
+
