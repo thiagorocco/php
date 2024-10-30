@@ -44,4 +44,15 @@ if ($exibir_nome){
     • Tipo NULL.
 */
 
-# Parei na página 37
+//recurso(resource)
+/* 
+    mantém uma referência de recurso externo. 
+    Recursos são criados e utilizados por funções como aquelas que
+    criam conexões de banco de dados. Quando as funções mysql_connect() e
+    pg_connect(), por exemplo, são conectadas ao banco de dados, retornam uma
+    variável de referência do tipo recurso. 
+*/
+
+//Tipo misto -  indica que a função aceita diversos tipos de dados como parâmetro.
+//Um exemplo é a função gettype(), que obtém o tipo da variável
+
