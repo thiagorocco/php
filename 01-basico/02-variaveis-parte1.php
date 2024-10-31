@@ -81,8 +81,3 @@ function calcula_imc(float $peso, float $altura){
     return $peso/($altura*$altura);
 }
 var_dump(calcula_imc('75.1',2));
-
-//Tipagem estrita
-//quando habilitada, exige que o tipo da variável passada como parâmetro em tempo de execução
-//seja exatamente o mesmo tipo declarado.
-
