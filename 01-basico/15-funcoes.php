@@ -1,5 +1,9 @@
 <?php 
+    //variáveis globais
+    $peso = 86;
+
     function nome_da_funcao($arg1, $arg2, $argN){
+        //variáveis locais
         $valor = $arg1 + $arg2 + $argN;
         return $valor;
     }
