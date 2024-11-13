@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Threads PHP</title>
+    </head>
+ <body>
+ <form action="processo.php" target="result" method="post">
+ <table border=0 width="90%" align="center">
+ <tr>
+ <td width="70%">
+ <font size=6><b>Utilizando pthread no PHP</b></font><br><br>
+ <font size=5>Processador i7 (QuadCore - 8 nucleos)</font><br><br><br>
+ <font size=4>Tamanho: <select id="tamanho" name="tamanho">
+ <option value=1>1 unidade</option>
+ <option value=10>10 unidades</option>
+ <option value=100>100 unidades</option>
+ <option value=1000>1000 unidades</option>
+ </select> (1000x)<br><br>
+ 
+<font size=4>Exemplo: <select id="exemplo" name="exemplo">
+ <option value=2>2 threads</option>
+ <option value=4>4 threads</option>
+ <option value=5>5 threads</option>
+ <option value=8>8 threads</option>
+ <option value=20>20 threads</option>
+ </select><br><br>
+  
+ <input type="submit" value="Processar"><br><br>
+ </td>
+ <td width="30%">&nbsp;</td>
+ </tr>
+ <tr>
+ <td width="70%">
+ <font size=5>Resultado</font><br>
+ <iframe name="result" src="processo.php" width="100%"></iframe>
+ </td>
+ <td width="30%">&nbsp;</td>
+ </tr>
+ </table> 
+ <form>
+ </body>
+</html>
